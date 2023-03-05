@@ -1133,23 +1133,23 @@ var strats = config.optionMergeStrategies;
 	*/
 {
 
-  strats.el = strats.propsData = function (parent, child, vm, key) {
+	strats.el = strats.propsData = function (parent, child, vm, key) {
 
-    if (!vm) {
+		if (!vm) {
 
-      warn(
+			warn(
 
-        "option \"" + key + "\" can only be used during instance " +
+				"option \"" + key + "\" can only be used during instance " +
 
-        'creation with the `new` keyword.'
+				'creation with the `new` keyword.'
 
-      );
+			);
 
-    }
+		}
 
-    return defaultStrat(parent, child)
+		return defaultStrat(parent, child)
 
-  };
+	};
 
 }
 
